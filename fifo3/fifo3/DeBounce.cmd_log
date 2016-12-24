@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo3/fifo3/DeBounce.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo3/fifo3/DeBounce.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo3/fifo3/DeBounce.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo3/fifo3/DeBounce.syr" 

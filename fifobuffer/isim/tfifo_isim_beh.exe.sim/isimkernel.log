@@ -1,0 +1,37 @@
+Command line:
+   tfifo_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49168
+
+Tue Jun 09 12:08:11 2015
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 504.947 Meg
+
+ Total Signals          : 62
+ Total Nets             : 113
+ Total Signal Drivers   : 33
+ Total Blocks           : 9
+ Total Primitive Blocks : 6
+ Total Processes        : 48
+ Total Traceable Variables  : 65
+ Total Scalar Nets and Variables : 655
+Total Line Count : 308
+Total Line Count : 308
+Total Line Count : 308
+Total Line Count : 308
+Total Line Count : 308
+Total Line Count : 308
+Total Line Count : 308
+Total Line Count : 308
+Total Line Count : 308
+
+ Total Simulation Time: 289.054 sec
+
+ Current Memory Usage: 504.947 Meg
+
+Tue Jun 09 12:45:33 2015
+

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/debouncetester/disp_mux.xst" -ofn "C:/FistState/Projects/FIFObuffer/debouncetester/disp_mux.syr" 

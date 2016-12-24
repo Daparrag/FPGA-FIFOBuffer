@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\FistState\Projects\FIFObuffer\fifo4\fifo.ncd
+OUTFILE=C:\FistState\Projects\FIFObuffer\fifo4\fifo.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\FistState\Projects\FIFObuffer\fifo4
+LICENSE=WebPack
+USER_INFO=211045858_0_0_479

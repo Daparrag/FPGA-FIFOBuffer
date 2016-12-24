@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">Y</arg>&gt; in unit &lt;<arg fmt="%s" index="2">fifo</arg>&gt; has a constant value of <arg fmt="%s" index="3">00</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">yin</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">wrd</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">wr</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">red</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">re</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">unit_btred</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">unit_btwrd</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btwrd/DB_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btwrd/DFF2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btwrd/DFF1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btwrd/q_reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btwrd/q_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btred/DB_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btred/DFF2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btred/DFF1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btred/q_reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">unit_btred/q_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fifo</arg>&gt;.
+</msg>
+
+</messages>
+

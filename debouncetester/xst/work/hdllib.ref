@@ -1,0 +1,6 @@
+MO EnableDigit NULL C:/FistState/Projects/Sevensegment2/EnableDigit.v vlg0C/_enable_digit.bin 1434031655
+MO debounce_test NULL debounce_test.v vlg24/debounce__test.bin 1434031655
+MO DeBounce NULL C:/FistState/Projects/deBounce/DeBounce_v.v vlg5D/_de_bounce.bin 1434031655
+MO disp_mux NULL C:/FistState/Projects/SevenSegments/disp_muxcontrol.v vlg4D/disp__mux.bin 1434031655
+MO edge_detector NULL edge_detector.v vlg52/edge__detector.bin 1434031655
+MO hex_to_sseg NULL C:/FistState/Projects/SevenSegments/module_hex_to_sseg.v vlg6C/hex__to__sseg.bin 1434031655

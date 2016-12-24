@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/FistState/Projects/FIFObuffer/fifobuffer/tfifo_isim_beh.exe" -prj "C:/FistState/Projects/FIFObuffer/fifobuffer/tfifo_beh.prj" "work.tfifo" "work.glbl" 

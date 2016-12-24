@@ -1,0 +1,338 @@
+Release 14.3 - xst P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: fifo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fifo.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fifo"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : fifo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "fifo.v" in library work
+Compiling verilog include file "C:/FistState/Projects/FIFObuffer/reg_file.v"
+Compiling verilog include file "C:/FistState/Projects/deBounce/DeBounce_v.v"
+Module <reg_file> compiled
+Module <DeBounce> compiled
+Module <fifo> compiled
+No errors in compilation
+Analysis of file <"fifo.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <fifo> in library <work> with parameters.
+	B = "00000000000000000000000000001000"
+	EMPTY = "00"
+	FULL = "11"
+	Maxa = "11"
+	Maxw = "100"
+	Mina = "00"
+	Minw = "000"
+	NORMAL = "01"
+	W = "00000000000000000000000000000011"
+
+Analyzing hierarchy for module <DeBounce> in library <work> with parameters.
+	N = "00000000000000000000000000000010"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <fifo>.
+	B = 32'sb00000000000000000000000000001000
+	EMPTY = 2'b00
+	FULL = 2'b11
+	Maxa = 2'b11
+	Maxw = 3'b100
+	Mina = 2'b00
+	Minw = 3'b000
+	NORMAL = 2'b01
+	W = 32'sb00000000000000000000000000000011
+Module <fifo> is correct for synthesis.
+ 
+Analyzing module <DeBounce> in library <work>.
+	N = 32'sb00000000000000000000000000000010
+Module <DeBounce> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <Y> in unit <fifo> has a constant value of 00 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <DeBounce>.
+    Related source file is "C:/FistState/Projects/deBounce/DeBounce_v.v".
+    Found 1-bit register for signal <DB_out>.
+    Found 1-bit register for signal <DFF1>.
+    Found 1-bit register for signal <DFF2>.
+    Found 2-bit adder for signal <q_next$addsub0000> created at line 31.
+    Found 2-bit register for signal <q_reg>.
+    Found 1-bit xor2 for signal <q_reset>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <DeBounce> synthesized.
+
+
+Synthesizing Unit <fifo>.
+    Related source file is "fifo.v".
+WARNING:Xst:646 - Signal <yin> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wrd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <red> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <re> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <fifo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 2-bit adder                                           : 2
+# Registers                                            : 8
+ 1-bit register                                        : 6
+ 2-bit register                                        : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <unit_btred> is unconnected in block <fifo>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <unit_btwrd> is unconnected in block <fifo>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 2-bit adder                                           : 2
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <fifo> ...
+
+Optimizing unit <DeBounce> ...
+WARNING:Xst:2677 - Node <unit_btwrd/DB_out> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <unit_btwrd/DFF2> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <unit_btwrd/DFF1> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <unit_btwrd/q_reg_1> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <unit_btwrd/q_reg_0> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <unit_btred/DB_out> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <unit_btred/DFF2> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <unit_btred/DFF1> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <unit_btred/q_reg_1> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <unit_btred/q_reg_0> of sequential type is unconnected in block <fifo>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fifo, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : fifo.ngr
+Top Level Output File Name         : fifo
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 4
+
+Cell Usage :
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                        0  out of   1920     0%  
+ Number of IOs:                           4
+ Number of bonded IOBs:                   0  out of    173     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.89 secs
+ 
+--> 
+
+Total memory usage is 251296 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

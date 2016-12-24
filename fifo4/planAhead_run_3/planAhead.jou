@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.3 (64-bit)
+# Build 209282 by xbuild on Thu Oct 18 20:50:53 MDT 2012
+# Start of session at: Thu Jun 11 13:17:56 2015
+# Process ID: 8404
+# Log file: C:/FistState/Projects/FIFObuffer/fifo4/planAhead_run_3/planAhead.log
+# Journal file: C:/FistState/Projects/FIFObuffer/fifo4/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/FistState/Projects/FIFObuffer/fifo4/pa.fromNcd.tcl

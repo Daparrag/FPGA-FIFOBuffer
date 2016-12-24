@@ -1,0 +1,7 @@
+MO button NULL C:/FistState/Projects/deBounce/button.v vlg00/button.bin 1434027002
+MO EnableDigit NULL C:/FistState/Projects/Sevensegment2/EnableDigit.v vlg0C/_enable_digit.bin 1434027002
+MO reg_file NULL C:/FistState/Projects/FIFObuffer/reg_file.v vlg69/reg__file.bin 1434027002
+MO fifo NULL fifo.v vlg7C/fifo.bin 1434027002
+MO DeBounce NULL C:/FistState/Projects/deBounce/DeBounce_v.v vlg5D/_de_bounce.bin 1434027002
+MO disp_mux NULL C:/FistState/Projects/SevenSegments/disp_muxcontrol.v vlg4D/disp__mux.bin 1434027002
+MO hex_to_sseg NULL C:/FistState/Projects/SevenSegments/module_hex_to_sseg.v vlg6C/hex__to__sseg.bin 1434027002

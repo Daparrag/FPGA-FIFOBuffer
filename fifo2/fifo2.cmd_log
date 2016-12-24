@@ -1,0 +1,45 @@
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 fifo2.ngc fifo2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o fifo2_map.ncd fifo2.ngd fifo2.pcf 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 fifo2.ngc fifo2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o fifo2_map.ncd fifo2.ngd fifo2.pcf 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 fifo2.ngc fifo2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o fifo2_map.ncd fifo2.ngd fifo2.pcf 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 fifo2.ngc fifo2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o fifo2_map.ncd fifo2.ngd fifo2.pcf 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 fifo2.ngc fifo2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o fifo2_map.ncd fifo2.ngd fifo2.pcf 
+par -w -intstyle ise -ol high -t 1 fifo2_map.ncd fifo2.ncd fifo2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fifo2.twx fifo2.ncd -o fifo2.twr fifo2.pcf 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 fifo2.ngc fifo2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o fifo2_map.ncd fifo2.ngd fifo2.pcf 
+par -w -intstyle ise -ol high -t 1 fifo2_map.ncd fifo2.ncd fifo2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fifo2.twx fifo2.ncd -o fifo2.twr fifo2.pcf 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 fifo2.ngc fifo2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o fifo2_map.ncd fifo2.ngd fifo2.pcf 
+par -w -intstyle ise -ol high -t 1 fifo2_map.ncd fifo2.ncd fifo2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fifo2.twx fifo2.ncd -o fifo2.twr fifo2.pcf 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 fifo2.ngc fifo2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o fifo2_map.ncd fifo2.ngd fifo2.pcf 
+par -w -intstyle ise -ol high -t 1 fifo2_map.ncd fifo2.ncd fifo2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fifo2.twx fifo2.ncd -o fifo2.twr fifo2.pcf 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo2/fifo2.syr" 

@@ -1,0 +1,160 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/FistState/Projects/FIFObuffer
+vDeBounce
+Z0 !s110 1434105973
+!i10b 1
+!s100 RfKagC=J^BjJZzmK<:OoO2
+IOj?8MI=B]5OIlQk4G1oe`1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/FistState/Projects/FIFObuffer/debouncetester
+w1434100713
+8C:/FistState/Projects/deBounce/DeBounce_v.v
+FC:/FistState/Projects/deBounce/DeBounce_v.v
+L0 4
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1434105973.000000
+Z5 !s107 C:/FistState/Projects/SevenSegments/module_hex_to_sseg.v|C:/FistState/Projects/Sevensegment2/EnableDigit.v|C:/FistState/Projects/SevenSegments/disp_muxcontrol.v|C:/FistState/Projects/deBounce/DeBounce_v.v|C:/FistState/Projects/FIFObuffer/debouncetester/debounce_test.v|
+Z6 !s90 -reportprogress|300|-work|work|-stats=none|C:/FistState/Projects/FIFObuffer/debouncetester/debounce_test.v|
+!s101 -O0
+!i113 1
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@de@bounce
+vdebounce_test
+R0
+!i10b 1
+!s100 6EcRjoo3MS?`CzOCcD5L00
+In=^iz5gh8WoDQR>NnW=SB2
+R1
+R2
+w1434100612
+8C:/FistState/Projects/FIFObuffer/debouncetester/debounce_test.v
+FC:/FistState/Projects/FIFObuffer/debouncetester/debounce_test.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vDeBounce_tf
+R0
+!i10b 1
+!s100 6HD<HVTI853g0J1kd8Pgz0
+IGb5gl6M<89T8J>;dGP>Xo2
+R1
+R2
+w1434101070
+8C:/FistState/Projects/deBounce/DeBounce_tf.v
+FC:/FistState/Projects/deBounce/DeBounce_tf.v
+L0 18
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/FistState/Projects/deBounce/DeBounce_tf.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FistState/Projects/deBounce/DeBounce_tf.v|
+!s101 -O0
+!i113 1
+R7
+n@de@bounce_tf
+vdisp_mux
+R0
+!i10b 1
+!s100 >dD^hkKIGNc<QC^Zke<@C3
+I3?;6SiBW^;T:GBbgjOV[F3
+R1
+R2
+w1434031155
+8C:/FistState/Projects/SevenSegments/disp_muxcontrol.v
+FC:/FistState/Projects/SevenSegments/disp_muxcontrol.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vedge_detector
+!s110 1434104807
+!i10b 1
+!s100 zCKmEoUDBUK1Ha0eZihGU1
+IDa><9W7jT1hDDU>;CBJU73
+R1
+R2
+w1434104719
+8C:/FistState/Projects/FIFObuffer/debouncetester/edge_detector.v
+FC:/FistState/Projects/FIFObuffer/debouncetester/edge_detector.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1434104807.000000
+!s107 C:/FistState/Projects/FIFObuffer/debouncetester/edge_detector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FistState/Projects/FIFObuffer/debouncetester/edge_detector.v|
+!s101 -O0
+!i113 1
+R7
+vEnableDigit
+R0
+!i10b 1
+!s100 Ze0I@[cSBX::YhFFW4Ub72
+IU>kHYM0j1^MM^K2;[hIYa3
+R1
+R2
+w1434031051
+8C:/FistState/Projects/Sevensegment2/EnableDigit.v
+FC:/FistState/Projects/Sevensegment2/EnableDigit.v
+L0 15
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@enable@digit
+vhex_to_sseg
+R0
+!i10b 1
+!s100 8glID5X^KRkzI3VzA3mYg3
+I=j>jkQO208aQIBCU><4Qk3
+R1
+R2
+w1432950160
+8C:/FistState/Projects/SevenSegments/module_hex_to_sseg.v
+FC:/FistState/Projects/SevenSegments/module_hex_to_sseg.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7

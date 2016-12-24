@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/FistState/Projects/FIFObuffer/fifo3/fifo3/fsm_using_always.xst" -ofn "C:/FistState/Projects/FIFObuffer/fifo3/fifo3/fsm_using_always.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 fsm_using_always.ngc fsm_using_always.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o fsm_using_always_map.ncd fsm_using_always.ngd fsm_using_always.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_using_always_map.ncd fsm_using_always.ncd fsm_using_always.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_using_always.twx fsm_using_always.ncd -o fsm_using_always.twr fsm_using_always.pcf 

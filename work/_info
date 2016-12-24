@@ -1,0 +1,180 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vbutton
+Z0 !s110 1433880163
+!i10b 1
+!s100 68`9`=aEA8mPL=a^l:z_[0
+IE=1@<ldB<hfNUI;`;5lZe1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/FistState/Projects/FIFObuffer
+w1433872408
+8C:/FistState/Projects/FIFObuffer/fifo4/button.v
+FC:/FistState/Projects/FIFObuffer/fifo4/button.v
+L0 2
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1433880163.000000
+!s107 C:/FistState/Projects/FIFObuffer/fifo4/button.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FistState/Projects/FIFObuffer/fifo4/button.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vDeBounce
+R0
+!i10b 1
+!s100 ngdG?YCBTGQc2@@EVkzj30
+IeKJPd6Ngi5CUK6]g[m@oL2
+R1
+R2
+w1433872330
+8C:/FistState/Projects/FIFObuffer/fifo4/DeBounce_v.v
+FC:/FistState/Projects/FIFObuffer/fifo4/DeBounce_v.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/FistState/Projects/FIFObuffer/fifo4/DeBounce_v.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FistState/Projects/FIFObuffer/fifo4/DeBounce_v.v|
+!s101 -O0
+!i113 1
+R5
+n@de@bounce
+vdisp_mux
+Z6 !s110 1433795731
+!i10b 1
+!s100 aQTWijI@Y`A==MMflMCc00
+I0bU7AjeYY=>iJCOjKJB2S0
+R1
+R2
+w1433684907
+8C:/FistState/Projects/SevenSegments/disp_muxcontrol.v
+FC:/FistState/Projects/SevenSegments/disp_muxcontrol.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z7 !s108 1433795731.000000
+Z8 !s107 C:/FistState/Projects/SevenSegments/module_hex_to_sseg.v|C:/FistState/Projects/Sevensegment2/EnableDigit.v|C:/FistState/Projects/SevenSegments/disp_muxcontrol.v|C:/FistState/Projects/deBounce/DeBounce_v.v|C:/FistState/Projects/FIFObuffer/reg_file.v|C:\FistState\Projects\FIFObuffer\fifo.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:\FistState\Projects\FIFObuffer\fifo.v|
+!s101 -O0
+!i113 1
+R5
+vEnableDigit
+R6
+!i10b 1
+!s100 R[_oHP>AG7<5LXkDVQCjH0
+IfMP^dfdoYHOHk41eS=LKO0
+R1
+R2
+w1433675102
+8C:/FistState/Projects/Sevensegment2/EnableDigit.v
+FC:/FistState/Projects/Sevensegment2/EnableDigit.v
+L0 15
+R3
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R5
+n@enable@digit
+vfifo
+R0
+!i10b 1
+!s100 Q?AILkYD>SQ^cWA?`WEJ91
+IWCS@7WWX[2<AHC@SC88RT0
+R1
+R2
+w1433880056
+8C:/FistState/Projects/FIFObuffer/fifo4/fifo.v
+FC:/FistState/Projects/FIFObuffer/fifo4/fifo.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/FistState/Projects/FIFObuffer/fifo4/fifo.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FistState/Projects/FIFObuffer/fifo4/fifo.v|
+!s101 -O0
+!i113 1
+R5
+vhex_to_sseg
+R6
+!i10b 1
+!s100 dK=ZhmLX?060=;8aOhC4[2
+IXVnP]=lAG@IS3Bho2XKC:3
+R1
+R2
+w1432950160
+8C:/FistState/Projects/SevenSegments/module_hex_to_sseg.v
+FC:/FistState/Projects/SevenSegments/module_hex_to_sseg.v
+L0 2
+R3
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R5
+vreg_file
+!s110 1433880164
+!i10b 1
+!s100 nB`kdcR0B^dHE4Ih=0]_B3
+IYfX>aj_XI;I?BzY40ZOiO0
+R1
+R2
+w1433879718
+8C:/FistState/Projects/FIFObuffer/reg_file.v
+FC:/FistState/Projects/FIFObuffer/reg_file.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1433880164.000000
+!s107 C:/FistState/Projects/FIFObuffer/reg_file.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FistState/Projects/FIFObuffer/reg_file.v|
+!s101 -O0
+!i113 1
+R5
+vtfifo
+R0
+!i10b 1
+!s100 [;hYb[`369GaXdPH_NRNZ0
+I2Ei<B@2;Uz3bKUlj=D@^^0
+R1
+R2
+w1433880153
+8C:/FistState/Projects/FIFObuffer/tfifo.v
+FC:/FistState/Projects/FIFObuffer/tfifo.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/FistState/Projects/FIFObuffer/tfifo.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FistState/Projects/FIFObuffer/tfifo.v|
+!s101 -O0
+!i113 1
+R5

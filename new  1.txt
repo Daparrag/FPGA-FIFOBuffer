@@ -1,0 +1,201 @@
+//FIFO Buffer
+`include "C:/FistState/Projects/FIFObuffer/reg_file.v"
+`include "C:/FistState/Projects/deBounce/DeBounce_v.v"
+`include "C:/FistState/Projects/SevenSegments/disp_muxcontrol.v"
+`include "C:/FistState/Projects/Sevensegment2/EnableDigit.v"
+`include "C:/FistState/Projects/SevenSegments/module_hex_to_sseg.v"
+module fifo
+#(
+parameter B = 8, // number of bits 
+W = 3, // number of address bits
+Maxw=3'b100,
+Minw=3'b000,
+Maxa=2'b11,
+Mina=2'b00
+) 
+
+(
+input wire clk, clr, button_red, button_wrd, //inputValues
+//input wire [W-1:0] w_addr, r_addr, 
+input wire [7:0] data, 
+output wire [3:0] an,
+output wire [7:0] sseg,
+output wire full,empty
+);
+reg [1:0] yin , Y; 
+reg [1:0] Yaux = 2'b00;
+localparam EMPTY=2'b00, NORMAL=2'b01, FULL=2'b11; //States assignment
+
+//reg  [7:0] temp_value  = 8'h0;
+reg [W-1:0] w_addr = Minw; 
+reg [W-1:0] r_addr = Minw;
+reg [B-1:0] w_data;
+wire[B-1:0] r_data;
+reg wr, re;
+reg fullux, emptyaux;
+reg [2:0] statefull = Maxw;
+wire red,wrd;
+wire cop;
+wire [11:0] dsp;
+DeBounce unit_btred(.clk(clk), .n_reset(clr), .button_in(button_red), .DB_out(red));
+DeBounce unit_btwrd(.clk(clk), .n_reset(clr), .button_in(button_wrd), .DB_out(wrd));
+
+reg_file unit_1 (.clk(clk), .wr_en(wr) , .re_en(re), .w_addr(w_addr),  .r_addr(r_addr),  .w_data(w_data), .r_data(r_data));
+// trvalue  = 8'h0;
+//define next step and output
+//assign cop = ( wrd |  red);
+
+always @(posedge clk) begin
+		if(clr) begin
+			Y<=EMPTY;
+			Yaux<=EMPTY;
+		end else begin
+		yin = Y;
+		end		
+		case (yin)
+			EMPTY: 
+				if(wrd) begin
+						w_data = data;
+						wr = 1'b1;
+						if (w_addr == Maxa) begin
+						w_addr <= Minw; 
+					end else begin
+						w_addr <= w_addr + 1'b1;
+					end
+					if (statefull == Minw + 1) begin
+					statefull = Minw;
+					fullux = 1'b1;
+					emptyaux = 1'b0;		
+					Y <= FULL;
+					Yaux <= FULL;
+					end else begin
+					fullux=1'b0;
+					emptyaux=1'b0;
+					statefull = statefull - 1'b1;
+					Y <= NORMAL;
+					Yaux <= NORMAL;
+					end
+				end
+				else begin
+				Y <= EMPTY;
+				Yaux <= EMPTY;
+				end
+				
+			NORMAL:	
+				if(wrd) begin
+					w_data = data;
+					wr = 1'b1;	
+					if (w_addr == Maxa) begin
+					w_addr <= Mina;
+					end else begin
+					w_addr <= w_addr + 1;
+					end
+					if (statefull == Minw + 1)  begin
+					statefull=Minw;
+					fullux = 1'b1;
+					emptyaux = 1'b0;
+					Y <= FULL;
+					Yaux <= FULL;
+					end else begin
+					statefull = statefull - 1'b1;
+					fullux = 1'b0;
+					emptyaux = 1'b0;
+					Y <= NORMAL;
+					Yaux <= NORMAL;
+					end
+				end
+				else if (red) begin
+					 re = 1'b1;
+					if(r_addr == Maxa) begin
+						r_addr <= Mina;
+					end else begin
+						r_addr <= r_addr +1'b1;
+					end
+					if (statefull == Maxw - 1) begin
+						statefull = Maxw;
+						fullux = 1'b0;
+						emptyaux = 1'b1;
+						Y <= EMPTY;
+						Yaux <= EMPTY;
+					end else begin
+					statefull = statefull + 1'b1;
+					fullux = 1'b0;
+				   emptyaux = 1'b0;
+					Y <= NORMAL;
+					Yaux <= NORMAL;
+					end
+				end
+			
+			FULL: 
+				if (red) begin
+					re = 1'b1;
+					statefull = statefull +1'b1;
+					if(r_addr == Maxa) begin
+						r_addr <= Mina;
+					end else begin
+					r_addr <= r_addr + 1'b1;
+					end
+				fullux = 1'b0;
+				emptyaux = 1'b0;
+				Y <= NORMAL;
+				Yaux <= NORMAL;
+				end
+				else begin
+				fullux = 1'b1;
+				emptyaux = 1'b0;
+				Y <= FULL;
+				Yaux <= FULL;
+				end
+		
+			default :
+			Y <= Yaux;
+endcase
+end
+
+/*always @(posedge clk)
+	if (clr) begin 
+	 Y <= EMPTY;
+	 Yaux<=EMPTY;
+	end else begin 
+	yin = Y;	
+end*/
+
+//always @ (negedge wrd, negedge red) begin
+/*always @ (negedge cop) begin
+ wr <= 1'b0;
+ re <=1'b0;
+end
+*/
+//Counter Reset
+reg q_wr,q_re;
+//reg wsg,rsg;
+reg q_reg = 4'b0000;
+
+//assign wr = wsg;
+//assign re = rsg;
+//Counter Reset
+always @ (posedge clk) 
+	begin
+	if (wr) begin
+		if (q_reg == 1'b1) begin
+		q_wr = 1'b0;	
+		end else begin
+		q_wr = 1'b1;	
+		q_reg = q_reg + 1'b1;
+		end
+	end
+end
+
+
+assign full = fullux;
+assign empty = emptyaux;
+assign dsp = {{Maxw-statefull}, {r_data}};
+
+disp_mux unit_dsp (.clk(clk), .reset(clr), .value_used(dsp), .an(an), .sseg(sseg));
+
+//define the state update sequential logic
+
+endmodule
+		
+		
+	
